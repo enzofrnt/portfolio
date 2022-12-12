@@ -100,21 +100,9 @@ nav {
     text-align: center;
     color: #a8a8a8;
 }
-.navigation-list{   
-    list-style-type: none;
-    display: flex; 
-    flex-flow: wrap;
-    padding:0;
-    justify-content: center;
-    padding: 30px 0;
-}
 
 .align-left{
     justify-content: left;
-}
-
-.align-center{
-    justify-content: center;
 }
 
 .name-nav{
@@ -134,7 +122,6 @@ nav {
 
 .center {
     margin-top: 40px;
-   
 }
 
 .button1 {
