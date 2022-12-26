@@ -1,0 +1,64 @@
+/*  nav */
+nav {
+    top: 0%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #2e2e2e; 
+    display: flex; 
+    width: 100%;
+}
+
+.navbar-lu {
+    display: flex;
+    color: #ffffff;
+}
+.navbar-lu li {
+    padding: 0 10px;
+    display: inline-block;
+    text-align: left;
+}
+.navbar-lu a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+.navbar-lu a:hover {
+    color: #ffffff;
+    
+}
+
+.main-nav{
+    display: flex;
+    flex: 1;    
+    padding: 10px 20px;
+
+}
+
+.left {
+    flex: 1;
+    padding: 14px 0;
+    text-align: left;
+    color: #a8a8a8;
+}
+
+.nav-center {
+    flex: 1;
+    color: #a8a8a8;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.right {
+    flex: 1;
+    color: #a8a8a8;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name-nav{
+    text-decoration: none;
+    color : white;
+}
+/* nav */
