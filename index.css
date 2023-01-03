@@ -10,6 +10,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     margin: 0;
+    height: 100%;
 }    
 
 
@@ -57,5 +58,3 @@ background: var(--main-color);
 box-shadow: inset 5px 5px 30px #5e5e5e,
             inset -5px -5px 30px #7f7f7f;
 }
-
-

@@ -1,18 +1,6 @@
-:root {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    margin: 0;
-}
-
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
+    color: #fff; 
   }
   
   .footer-container {
@@ -21,6 +9,13 @@ footer {
     align-items: center;
   }
   
+  .footer-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+  }
+
   .footer-left p, .footer-right a {
     margin: 0;
     padding: 0;
@@ -30,14 +25,23 @@ footer {
   .footer-left p {
     font-size: 14px;
   }
+
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
   
   .footer-right a {
     font-size: 16px;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 10px;
+    text-align: center;
   }
   
   .footer-right a:hover {
     color: #ccc;
-    margin-right: 50px;
   }
+
+  
