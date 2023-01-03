@@ -29,10 +29,13 @@ footer {
     padding: 5px;
   }
   
+  .footer-left a {
+    text-decoration: none;
+  }
+
   .footer-left {
     font-size: 16px;
     text-decoration: none;
-    
     text-align: left;
   }
 
