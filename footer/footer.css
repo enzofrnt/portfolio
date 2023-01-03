@@ -9,10 +9,6 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  
-  .footer-right {
-    
-  }
 
   .footer-right p, .footer-left a {
     margin: 0;

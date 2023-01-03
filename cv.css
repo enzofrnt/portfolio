@@ -12,7 +12,20 @@ body {
 }
 
 .block {
-    display: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    padding-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: left; 
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .canva {

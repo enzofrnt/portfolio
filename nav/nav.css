@@ -34,7 +34,7 @@ nav {
 
 }
 
-.left {
+.nav-left {
     flex: 1;
     padding: 14px 0;
     text-align: left;
@@ -51,7 +51,7 @@ nav {
     font-weight: bold;
 }
 
-.right {
+.nav-right {
     flex: 1;
     color: #a8a8a8;
     display: flex;
