@@ -34,7 +34,6 @@ hr {
 }
 
 .button {
-    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -57,4 +56,14 @@ hr {
     background: var(--main-color);
     box-shadow: inset 5px 5px 30px #5e5e5e,
                 inset -5px -5px 30px #7f7f7f;
+}
+
+
+hr{
+    border: none;
+    border-radius: 50px;
+    background-color: #2e2e2e;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }

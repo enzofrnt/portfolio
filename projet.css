@@ -21,12 +21,39 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0% 40%;
+    margin: 0% 30%;
     list-style-type: none;
-}.liste-projet li {
-    width: 100%;
-    height: 100%;
+    padding: 0px;
+}.liste-projet a {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+    height: 90%;
+    width: 90% ;
+
+    border-radius: 50px;
+    background: linear-gradient(145deg, #636363, #767676);
+    box-shadow:  20px 20px 60px #5e5e5e,
+                 -20px -20px 60px #7f7f7f;
 }.liste-projet hr {
+    background-color: #2e2e2e;
+    border: none;
     width: 100%;
     height: 100%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;  
+}.liste-projet a:hover {
+    border-radius: 50px;    
+    background: var(--main-color);
+    box-shadow: inset 5px 5px 30px #5e5e5e,
+                inset -5px -5px 30px #7f7f7f;
 }
+
