@@ -1,5 +1,5 @@
 body {
-    background-color: #a8a8a8;
+    background-color: #6e6e6e;
     color: #2e2e2e;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -11,22 +11,22 @@ body {
     color: #ffffff !important;
 }
 
+.block {
+    display: flex-start;
+}
+
 .canva {
-    
-    vertical-align: center;
-    align-items: center;
+    padding-top: 10px;
     text-align: center;
     width: 600px; 
-    height: 850px; 
+    height: 840px; 
     box-shadow: 0 2px 8px 0 rgb(0, 0, 0); 
-    overflow: hidden;
-    border-radius: 8px; 
-    will-change: transform;
+    border-radius: 8px;
+    margin: 10px;
 }
 
 .canva_iframe {
-    margin-top: 10px;
-    width: 584px; 
-    height: 827px;  
+    width: 580px; 
+    height: 820px;
     border: none;
 }
