@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Portfolio Enzo Fournet</title>
+
+        <meta charset="utf-8">
+        <meta name="Description" content="Ce site n'est pas terminer sont objectif et de mettre en avant les compétence de enzo fournetr àa la manière d'un porte folio">
+
+        <link rel="shortcut icon" href="../Image/PP.jpeg">
+        <link rel="stylesheet" href="freebox.css">
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <body>
+        <!--Nav bar-->
+        <div id="nav-placeholder"></div>
+        
+        <script>
+        $(function(){
+            $("#nav-placeholder").load("../nav/nav.html");   
+        });
+        </script>
+        <!--Nav bar-->
+
+        <!--Nav-projet bar-->
+        <div id="nav-projet"></div>
+        
+        <script>
+        $(function(){
+            $("#nav-projet").load("../Projet/navprojet/nav-projet.html");   
+        });
+        </script>
+        <!--Nav-projet bar-->
+        
+		<p class="postbody">
+            <h1 class="titre">Freebox Delta - Utiliser plus de coeur sur une VM</h1>
+
+            <sup>Il est recommandé d'utiliser Firefox pour la manip à suivre.</sup> 
+            
+            <h1><u>Avant :</u></h1>
+            <p>
+            Au départ, lorsque la Freebox delta a été lancé, il était possible d'allouer à une VM 3 cœurs du processeur 
+            ARM de la Delta qui en possède 4. Cependant, après des problèmes de stabilité, l'option a été supprimer. 
+            Mais d'après ce qu'on peut lire sur internet, il s'agirait d'un problème causé par un manque de RAM, 
+            il est donc nécessaire d'upgrade la RAM de votre Freebox avant de faire la manipulation qui va suivre pour des souvis de stabilité !
+            </p>
+            <p>je tiens a préciser que je ne suis en aucun cas responsable de tout problème qui pourrait survenir lors de la manipulation qui va suivre.</p>
+            
+            <p>Pour les Freebox f-gw07 0-jn (numéro de modèle de la FB, visible au dessous de celle ci) cette <a href="https://www.amazon.fr/gp/product/B077SB72QN/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;th=1" target="_blank" class="postlink">barrette</a> fonctionne en 8 Go de puisque je l'utilise et probablement aussi en 16 Go.</p> 
+            
+            <h1><u>Manipulation :</u></h1>
+            
+            <p>D'abord rendez-vous sur l'interface de votre Freebox puis dans l'interface relative au VM (Avec firefox). <br> 
+                Puis appuyez sur F12 pour ouvrir le panel développeur de Firefox. <br> 
+                Ensuite, dans celui-ci, rendez-vous dans l'onglet réseau.
+            </p>
+
+            <p>
+                Maitenant dans l'interface relative au VM modifiez le nombre de cœurs de la VM cible. <br>
+                Sur un ou deux peu importe puis faites appliquer, l'objectif étant de créer une requette http.
+            </p> 
+            
+            <p>
+                Dans le panel développeur réseau, deux requêtes vont apparaître, l'une en PUT, l'autre en GET. <br>
+                Comme ci dessous :
+            </p>
+            
+            <a href="https://i.imgur.com/pEL9cKD.png"><img src="https://i.imgur.com/pEL9cKD.png" alt="" width="60%" title="Cliquer pour agrandir"></a>
+            
+            <p>
+                Nous allons donc nous intéresser à la requette PUT. Faites un clique droit deçus puis choisissez "renvoyer". <br> 
+                Un nouvel onglet apparaitra sur la gauche de l'écran, dans le bas ce celui-ci vous trouverai "corps du message". <br> 
+                Ici vous chercherai "vcpus" suivis du nombre de cœurs choisi plutôt en cliquant sur le bouton appliqué de l'interface VM de la Freebox.
+            </p>
+
+            <br>
+            <a href="https://i.imgur.com/AxKNvKB.png"><img src="https://i.imgur.com/AxKNvKB.png" alt="" width="60%" title="Cliquer pour agrandir"></a> 
+
+            <p>
+                C'est ici que à la suite de "vcpus": vous allez remplacer 1 ou 2 par trois 3 puis cliquer sur envoyer en bleu. <br> 
+                Cette modification ne sera pas visible sur l'interface Freebox OS et vous ne devrez pas faire appliquer mêmesi vous modifierun autre paramètre sur votre VM sous peine de recommencer la manipulation. <br> 
+                (Le démarrage, l'arrêt etle redemarrage de la VM ne pose pas de soucis) <br> 
+                Il vous suffit ensuite de lancer la VM et d'apprécier la rapidité de celle-ci.
+            </p>
+
+            <p>
+                A noté qu'il n'est pas possible de lancer deux VM à la fois, une avec 2 cœurs et l'autre avec 1 la Freebox ne le supporte normalement pas. <br>
+                Les deux seul possibilités sont : 1VM 3 cœurs ou 2VM 1 cœur chacune.
+            </p>
+
+            <p>
+                <u>Preuve que cela fonctionne :</u> 
+            </p>
+ 
+            <a href="https://i.imgur.com/pwK4kSc.png"><img src="https://i.imgur.com/pwK4kSc.png" alt="" width="60%" title="Cliquer pour agrandir"></a>
+
+            <p>           
+                Voila 3 cœurs sur ma VM "domo" avec tous mes containers qui tourne bein plus rapidement. <br>
+                (Avec netdata pour voir les graph...). 
+            </p>
+
+            <p>     
+                Et bein sure cela ne limite pas les capacités de la box :
+            </p>
+
+            
+            <a href="https://i.imgur.com/pwK4kSc.png"><img src="https://i.imgur.com/fonVtuk.png" alt="" width="20%" title="Cliquer pour agrandir"></a>
+            <a href="https://i.imgur.com/yc1caSc.jpeg"><img src="https://i.imgur.com/yc1caSc.jpeg" alt="" width="40%" title="Cliquer pour agrandir"></a>
+            
+
+            <p>
+                Le débit n'est absolument pas limité par les modification apporté à la Freebox. <br>
+                Si vous avez besoin d'aide, je suis sûre discord ORIGIN#8208. D'autre astuce, retourner la Freebox en ouvrant le capot gris réduit la chauffe (sans relever les disques dure).
+            </P>
+        </P>
+
+        <!--footer bar-->
+        <div id="footer-placeholder"></div>
+        
+        <script>
+        $(function(){
+            $("#footer-placeholder").load("../footer/footer.html");   
+        });
+        </script>
+        <!--footer bar-->
+    </body>
+
+</html>

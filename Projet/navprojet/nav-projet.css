@@ -1,0 +1,33 @@
+/*  nav */
+.nav-projet {
+    margin: 0%;
+    top: 0%;
+    padding: 0%;
+    background-color: #6e6e6e; 
+    display: none; 
+    justify-content: flex-end;
+    width: 100%;
+}
+.nav-projet-right{
+    margin: 0%;
+    margin-right: 30px !important;
+    background-color: #2e2e2e;
+    border-radius: 15px;
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.nav-projet-right a {
+    padding: 0px 10px;
+    color: #a8a8a8;
+    text-decoration: none;
+}.nav-projet-right a:hover {
+    color: #ffffff;
+}.nav-projet-right li {
+    list-style: none;
+}
+
+.hilight2:hover > .nav-projet {
+    display: flex !important;
+}
