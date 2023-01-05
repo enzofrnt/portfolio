@@ -4,7 +4,7 @@
     top: 0%;
     padding: 0%;
     background-color: #6e6e6e; 
-    display: none; 
+    display: flex;
     justify-content: flex-end;
     width: 100%;
 }
@@ -26,8 +26,4 @@
     color: #ffffff;
 }.nav-projet-right li {
     list-style: none;
-}
-
-.hilight2:hover > .nav-projet {
-    display: flex !important;
 }

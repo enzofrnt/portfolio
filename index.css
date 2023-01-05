@@ -67,3 +67,17 @@ hr{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.post-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    color: white;
+    background-color: #2e2e2e;
+    box-shadow: 0 2px 8px 0 rgb(71, 71, 71); 
+    border-radius: 20px; 
+}.post-block img {
+    margin: 30px;
+}
