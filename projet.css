@@ -17,14 +17,22 @@ h1 {
     text-align: center;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+}
+
 .liste-projet {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin: 0% 30%;
     list-style-type: none;
     padding: 0px;
 }.liste-projet a {
+    width: 60% !important;
+
     border: none;
     color: white;
     padding: 15px 32px;
@@ -44,12 +52,14 @@ h1 {
 }.liste-projet hr {
     background-color: #2e2e2e;
     border: none;
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding: 5px;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 50px;  
+
+    align-items: center;
 }.liste-projet a:hover {
     border-radius: 50px;    
     background: var(--main-color);

@@ -4,7 +4,7 @@
     top: 0%;
     padding: 0%;
     background-color: #6e6e6e; 
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 100%;
 }

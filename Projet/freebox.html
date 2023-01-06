@@ -9,28 +9,17 @@
         <link rel="shortcut icon" href="../Image/PP.jpeg">
         <link rel="stylesheet" href="./freebox.css">
         
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        
+        
     </head>
 
     <body>
         <!--Nav bar-->
         <div id="nav-placeholder"></div>
-        
-        <script>
-        $(function(){
-            $("#nav-placeholder").load("../nav/nav.html");   
-        });
-        </script>
         <!--Nav bar-->
 
         <!--Nav-projet bar-->
-        <div id="nav-projet"></div>
-        
-        <script>
-        $(function(){
-            $("#nav-projet").load("../Projet/navprojet/nav-projet.html");   
-        });
-        </script>
+        <div id="nav-projet-placeholder"></div>
         <!--Nav-projet bar-->
         
 		<p class="postbody">
@@ -88,7 +77,7 @@
                 A noté qu'il n'est pas possible de lancer deux VM à la fois, une avec 2 cœurs et l'autre avec 1 la Freebox ne le supporte normalement pas. <br>
                 Les deux seul possibilités sont : 1VM 3 cœurs ou 2VM 1 cœur chacune.
             </p>
-
+            
             <p>
                 <u>Preuve que cela fonctionne :</u> 
             </p>
@@ -99,11 +88,11 @@
                 Voila 3 cœurs sur ma VM "domo" avec tous mes containers qui tourne bein plus rapidement. <br>
                 (Avec netdata pour voir les graph...). 
             </p>
-
+            
             <p>     
                 Et bein sure cela ne limite pas les capacités de la box :
             </p>
-
+            
             
             <a href="https://i.imgur.com/pwK4kSc.png"><img src="https://i.imgur.com/fonVtuk.png" alt="" width="20%" title="Cliquer pour agrandir"></a>
             <a href="https://i.imgur.com/yc1caSc.jpeg"><img src="https://i.imgur.com/yc1caSc.jpeg" alt="" width="40%" title="Cliquer pour agrandir"></a>
@@ -114,16 +103,17 @@
                 Si vous avez besoin d'aide, je suis sûre discord ORIGIN#8208. D'autre astuce, retourner la Freebox en ouvrant le capot gris réduit la chauffe (sans relever les disques dure).
             </P>
         </P>
-
+        
         <!--footer bar-->
         <div id="footer-placeholder"></div>
-        
-        <script>
-        $(function(){
-            $("#footer-placeholder").load("../footer/footer.html");   
-        });
-        </script>
         <!--footer bar-->
+
+        
+        <script src="../js/jquery-3.6.3.min.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/nav-projet.js"></script>
+        <script src="../js/footer.js"></script>
+        <script src="../js/nav-projet-display.js"></script>
     </body>
 
 </html>

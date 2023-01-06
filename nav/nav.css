@@ -26,13 +26,6 @@ nav {
     color: #ffffff;
     
 }
-.nav-projet{
-    display: none !important;
-}
-
-.hilight2:hover .nav-projet{
-    display: flex    !important;
-}
 
 .main-nav{
     display: flex;
