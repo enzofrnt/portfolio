@@ -16,12 +16,18 @@ body {
     justify-content: space-between;
 }
 .right{
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #2e2e2e;
+    border-radius: 30px;
     padding-top: 10px;
-    padding-right: 220px;
+    padding-right: 30px;
     width: 50%;
     display: block;
     justify-content: left; 
-    margin-right: 14px;
+    margin-right: 70px;
+    color: #ffffff;
 }
 .left{
     width: 50%;
@@ -54,7 +60,7 @@ body {
     display: flex;
     justify-content: center;
     color: white;
-    background-color: #2e2e2e;
+    background-color: #3f3f3f;
     text-decoration: none;
     top: 10%;
     right: 2%;
@@ -69,8 +75,6 @@ body {
     align-items: center;
     flex-direction: row;
     width: 100%;
-}.horizontal a {
-    align-items: left;
 }.horizontal h1 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -108,5 +112,31 @@ body {
     margin-bottom: 10px;
     margin-top: 5px;
 }.post-block a {
-    color: #2e2e2e;
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    .block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right{
+        margin: 5%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-right: 0px;
+        width: 80%;
+        display: block;
+        justify-content: center; 
+        align-items: center; 
+       padding-left: 5%;
+       padding-right: 5%;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
 }

@@ -1,4 +1,6 @@
 /*  nav */
+
+
 nav {
     top: 0%;
     margin: 0.4%;
@@ -61,4 +63,95 @@ nav {
     text-decoration: none;
     color : white;
 }
-/* nav */
+
+.nav-right-mobile {
+    display: none;
+}
+
+#menu {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+@media (max-width: 985px) {
+    .main-nav{
+        padding: 20px 30px !important;
+    }
+    .nav-right {
+        display: none !important;
+    }
+    .nav-right-mobile {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-right-mobile button{
+        font-size: 20px;
+        height: 100%;
+        width: 50px;
+        border: none;
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 20px;
+        
+        background: #2e2e2e;
+        box-shadow:  7px 7px 14px #121212,
+                    -7px -7px 14px #4a4a4a;
+        padding: 1px 6px;
+    }
+    .nav-right-mobile-hover button {
+        border-radius: 20px;
+        background: #2e2e2e;
+        box-shadow: inset 7px 7px 14px #121212,
+                    inset -7px -7px 14px #4a4a4a;
+    }
+    .nav-right-mobile-cliked button{
+        border-radius: 20px;
+        background: #2e2e2e;
+        box-shadow: inset 7px 7px 14px #121212,
+                    inset -7px -7px 14px #4a4a4a;
+    }
+
+    #menu {
+        display: none;
+        height: 0;
+        overflow: hidden;
+        align-items: right;
+    }
+    #menu.open {
+        font-size: larger;
+        height: auto;
+        display: block;
+        background-color: #2e2e2e;
+        width: 120px;
+        margin-top: 5px;
+        margin-left: 80%;
+        padding: 10px;
+        border-radius: 20px;
+        position: absolute;   
+    }
+    #menu.open a{
+        text-decoration: none;
+        color: #a8a8a8;
+        
+    }
+    #menu.open li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style-type: none;
+    }
+    #menu.open a:hover{
+        color: #ffffff;
+    }
+        
+}
+
+@media (max-width: 730px) {
+    #menu.open {
+        margin-left: 75%;
+    }
+}

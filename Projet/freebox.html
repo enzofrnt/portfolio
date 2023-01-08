@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <script src="../js/jquery-3.6.3.min.js"></script>
+
         <title>Portfolio Enzo Fournet</title>
 
         <meta charset="utf-8">
-        <meta name="Description" content="Ce site n'est pas terminer sont objectif et de mettre en avant les compétence de enzo fournetr àa la manière d'un porte folio">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <meta name="Description" content="Je m'appel Enzo Fournet voici mon portfolio, je vous invite à le découvrir pour comprendre qui je suis et ce que je fais !">
+        <meta name="keywords" content="Dévellopeur, Toulouse, enzo frnt, enzo fournet, enzofrnt, cv, portfolio">
+        <meta name="author" content="Enzo Fournet">
 
-        <link rel="shortcut icon" href="../Image/PP.jpeg">
-        <link rel="stylesheet" href="./freebox.css">
-        
-        
-        
+        <meta property="og:title" content="Portfolio Enzo Fournet" />
+        <meta property="og:description" content="Je m'appel Enzo Fournet voici mon portfolio, je vous invite à le découvrir pour comprendre qui je suis et ce que je fais !" />
+        <meta property="og:url" content="https://enzo-frnt.fr" />
+        <meta property="og:image" content="https://enzo-frnt.fr/Image/PP.jpeg" />
+        <meta property="og:locale" content="eu_FR" />
+
+
+        <meta name="twitter:title" content="Portfolio Enzo Fournet">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="Je m'appel Enzo Fournet voici mon portfolio, je vous invite à le découvrir pour comprendre qui je suis et ce que je fais !">
+        <meta name="twitter:image" content="https://enzo-frnt.fr/Image/PP.jpeg" >
+        <meta name="twitter:url" content="https://enzo-frnt.fr" >
+        <meta name="twitter:site" content="Portfolio Enzo Fournet">
+        <meta name="twitter:creator" content="@enzo_frnt">
+       
+        <link rel="apple-touch-icon" href="https://enzo-frnt.fr/Image/PP.jpeg">
+        <link rel="apple-touch-startup-image" href="https://enzo-frnt.fr/Image/PP.jpeg">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Portfolio Enzo Fournet">
+
+        <link rel="shortcut icon" href="../Image/PP-petite-modified.webp" >
+        <link rel="stylesheet" href="../Projet/freebox.css">
     </head>
 
     <body>
         <!--Nav bar-->
         <div id="nav-placeholder"></div>
+        
         <!--Nav bar-->
 
         <!--Nav-projet bar-->
         <div id="nav-projet-placeholder"></div>
         <!--Nav-projet bar-->
+
+        <script src="../js/nav.js"></script>
+        <script src="../js/nav-projet.js"></script>
         
-		<p class="postbody">
+		<div class="postbody">
             <h1 class="titre">Freebox Delta - Utiliser plus de coeur sur une VM</h1>
 
             <sup>Il est recommandé d'utiliser Firefox pour la manip à suivre.</sup> 
             
             <h1><u>Avant :</u></h1>
             <p>
-            Au départ, lorsque la Freebox delta a été lancé, il était possible d'allouer à une VM 3 cœurs du processeur 
-            ARM de la Delta qui en possède 4. Cependant, après des problèmes de stabilité, l'option a été supprimer. 
+            Au départ, lorsque la Freebox delta a été lancée, il était possible d'allouer à une VM 3 cœurs du processeur 
+            ARM de la Delta qui en possède 4. Cependant, après des problèmes de stabilité, l'option a été supprimé. 
             Mais d'après ce qu'on peut lire sur internet, il s'agirait d'un problème causé par un manque de RAM, 
-            il est donc nécessaire d'upgrade la RAM de votre Freebox avant de faire la manipulation qui va suivre pour des souvis de stabilité !
+            il est donc nécessaire d'upgrade la RAM de votre Freebox avant de faire la manipulation qui va suivre pour des soucis de stabilité !
             </p>
-            <p>je tiens a préciser que je ne suis en aucun cas responsable de tout problème qui pourrait survenir lors de la manipulation qui va suivre.</p>
+            <p>
+                Je tiens a préciser que je ne suis en aucun cas responsable de tout problème qui pourrait survenir lors de la manipulation qui va suivre.
+            </p>
             
-            <p>Pour les Freebox f-gw07 0-jn (numéro de modèle de la FB, visible au dessous de celle ci) cette <a href="https://www.amazon.fr/gp/product/B077SB72QN/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;th=1" target="_blank" class="postlink">barrette</a> fonctionne en 8 Go de puisque je l'utilise et probablement aussi en 16 Go.</p> 
+            <p>
+                Pour les Freebox f-gw07 0-jn (numéro de modèle de la FB, visible au dessous de celle ci) cette <a href="https://www.amazon.fr/gp/product/B077SB72QN/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;th=1" target="_blank" class="postlink">barrette</a> fonctionne en 8 Go de puisque je l'utilise et probablement aussi en 16 Go.
+            </p> 
             
             <h1><u>Manipulation :</u></h1>
             
-            <p>D'abord rendez-vous sur l'interface de votre Freebox puis dans l'interface relative au VM (Avec firefox). <br> 
+            <p>
+                D'abord rendez-vous sur l'interface de votre Freebox puis dans l'interface relative au VM (Avec firefox). <br> 
                 Puis appuyez sur F12 pour ouvrir le panel développeur de Firefox. <br> 
                 Ensuite, dans celui-ci, rendez-vous dans l'onglet réseau.
             </p>
@@ -55,16 +86,16 @@
                 Comme ci dessous :
             </p>
             
-            <a href="https://i.imgur.com/pEL9cKD.png"><img src="https://i.imgur.com/pEL9cKD.png" alt="" width="60%" title="Cliquer pour agrandir"></a>
+            <a id="firefox1" href="https://i.imgur.com/pEL9cKD.png"><img src="https://i.imgur.com/pEL9cKD.png"  width="400" alt="" title="Cliquer pour agrandir"></a>
             
             <p>
-                Nous allons donc nous intéresser à la requette PUT. Faites un clique droit deçus puis choisissez "renvoyer". <br> 
-                Un nouvel onglet apparaitra sur la gauche de l'écran, dans le bas ce celui-ci vous trouverai "corps du message". <br> 
-                Ici vous chercherai "vcpus" suivis du nombre de cœurs choisi plutôt en cliquant sur le bouton appliqué de l'interface VM de la Freebox.
+                Nous allons donc nous intéresser à la requette PUT. Faites un clique droit dessus puis choisissez "renvoyer". <br> 
+                Un nouvel onglet apparaitra sur la gauche de l'écran, dans le bas de celui-ci vous trouverez "corps du message". <br> 
+                Ici vous chercherez "vcpus" suivi du nombre de cœurs choisi plutôt en cliquant sur le bouton "appliquer" de l'interface VM de la Freebox.
             </p>
 
             <br>
-            <a href="https://i.imgur.com/AxKNvKB.png"><img src="https://i.imgur.com/AxKNvKB.png" alt="" width="60%" title="Cliquer pour agrandir"></a> 
+            <a id="firefox2" href="https://i.imgur.com/AxKNvKB.png"><img src="https://i.imgur.com/AxKNvKB.png" width="400" alt="" title="Cliquer pour agrandir"></a> 
 
             <p>
                 C'est ici que à la suite de "vcpus": vous allez remplacer 1 ou 2 par trois 3 puis cliquer sur envoyer en bleu. <br> 
@@ -82,38 +113,34 @@
                 <u>Preuve que cela fonctionne :</u> 
             </p>
  
-            <a href="https://i.imgur.com/pwK4kSc.png"><img src="https://i.imgur.com/pwK4kSc.png" alt="" width="60%" title="Cliquer pour agrandir"></a>
+            <a id="proof" href="https://i.imgur.com/pwK4kSc.png"><img src="https://i.imgur.com/pwK4kSc.png" width="400" alt="" title="Cliquer pour agrandir"></a>
 
             <p>           
-                Voila 3 cœurs sur ma VM "domo" avec tous mes containers qui tourne bein plus rapidement. <br>
+                Voila 3 cœurs sur ma VM "domo" avec tous mes containers qui tournent bien plus rapidement. <br>
                 (Avec netdata pour voir les graph...). 
             </p>
             
             <p>     
-                Et bein sure cela ne limite pas les capacités de la box :
+                Et bien sûre cela ne limite pas les capacités de la box :
             </p>
             
             
-            <a href="https://i.imgur.com/pwK4kSc.png"><img src="https://i.imgur.com/fonVtuk.png" alt="" width="20%" title="Cliquer pour agrandir"></a>
-            <a href="https://i.imgur.com/yc1caSc.jpeg"><img src="https://i.imgur.com/yc1caSc.jpeg" alt="" width="40%" title="Cliquer pour agrandir"></a>
+            <a id="speed1" href="https://i.imgur.com/fonVtuk.png"><img src="https://i.imgur.com/fonVtuk.png" alt="" width="200" title="Cliquer pour agrandir"></a>
+            <a id="speed2" href="https:// i.imgur.com/yc1caSc.jpeg"><img src="https://i.imgur.com/yc1caSc.jpeg" alt="" width="400" title="Cliquer pour agrandir"></a>
             
 
             <p>
-                Le débit n'est absolument pas limité par les modification apporté à la Freebox. <br>
-                Si vous avez besoin d'aide, je suis sûre discord ORIGIN#8208. D'autre astuce, retourner la Freebox en ouvrant le capot gris réduit la chauffe (sans relever les disques dure).
-            </P>
-        </P>
+                Le débit n'est absolument pas limité par les modification apportée à la Freebox. <br>
+                Si vous avez besoin d'aide, je suis sur discord ORIGIN#8208. Une autre astuce, retourner la Freebox en ouvrant le capot gris réduit la chauffe (sans relever les disques dure).
+            </p>
+
+        </div>
         
         <!--footer bar-->
         <div id="footer-placeholder"></div>
+        <script src="../js/footer.js"></script>
         <!--footer bar-->
 
-        
-        <script src="../js/jquery-3.6.3.min.js"></script>
-        <script src="../js/nav.js"></script>
-        <script src="../js/nav-projet.js"></script>
-        <script src="../js/footer.js"></script>
-        <script src="../js/nav-projet-display.js"></script>
     </body>
 
 </html>

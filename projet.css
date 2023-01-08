@@ -31,7 +31,8 @@ img {
     list-style-type: none;
     padding: 0px;
 }.liste-projet a {
-    width: 60% !important;
+    width: 300px;
+    height: 300px;
 
     border: none;
     color: white;
@@ -41,10 +42,7 @@ img {
     display: inline-block;
     font-size: 16px;
 
-    cursor: pointer;
-    height: 90%;
-    width: 90% ;
-
+    
     border-radius: 50px;
     background: linear-gradient(145deg, #636363, #767676);
     box-shadow:  20px 20px 60px #5e5e5e,
@@ -65,5 +63,8 @@ img {
     background: var(--main-color);
     box-shadow: inset 5px 5px 30px #5e5e5e,
                 inset -5px -5px 30px #7f7f7f;
+}.liste-projet img {
+    width: 200px;
+    height: 200px;
 }
 
