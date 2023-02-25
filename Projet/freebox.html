@@ -3,7 +3,7 @@
     <head>
         <script src="../js/jquery-3.6.3.min.js"></script>
 
-        <title>Portfolio Enzo Fournet</title>
+        <title>Portfolio Enzo Fournet - Projet - Freebox</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
@@ -11,42 +11,39 @@
         <meta name="keywords" content="Dévellopeur, Toulouse, enzo frnt, enzo fournet, enzofrnt, cv, portfolio">
         <meta name="author" content="Enzo Fournet">
 
-        <meta property="og:title" content="Portfolio Enzo Fournet" />
+        <meta property="og:title" content="Portfolio Enzo Fournet - Projet - Freebox" />
         <meta property="og:description" content="Je m'appel Enzo Fournet voici mon portfolio, je vous invite à le découvrir pour comprendre qui je suis et ce que je fais !" />
         <meta property="og:url" content="https://enzo-frnt.fr" />
         <meta property="og:image" content="https://enzo-frnt.fr/Image/PP.jpeg" />
         <meta property="og:locale" content="eu_FR" />
 
 
-        <meta name="twitter:title" content="Portfolio Enzo Fournet">
+        <meta name="twitter:title" content="Portfolio Enzo Fournet - Projet - Freebox">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:description" content="Je m'appel Enzo Fournet voici mon portfolio, je vous invite à le découvrir pour comprendre qui je suis et ce que je fais !">
         <meta name="twitter:image" content="https://enzo-frnt.fr/Image/PP.jpeg" >
         <meta name="twitter:url" content="https://enzo-frnt.fr" >
-        <meta name="twitter:site" content="Portfolio Enzo Fournet">
+        <meta name="twitter:site" content="Portfolio Enzo Fournet - Projet - Freebox">
         <meta name="twitter:creator" content="@enzo_frnt">
        
         <link rel="apple-touch-icon" href="https://enzo-frnt.fr/Image/PP.jpeg">
         <link rel="apple-touch-startup-image" href="https://enzo-frnt.fr/Image/PP.jpeg">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="Portfolio Enzo Fournet">
+        <meta name="apple-mobile-web-app-title" content="Portfolio Enzo Fournet - Projet - Freebox">
 
         <link rel="shortcut icon" href="../Image/PP-petite-modified.webp" >
         <link rel="stylesheet" href="../Projet/freebox.css">
     </head>
 
     <body>
-        <!--Nav bar-->
-        <div id="nav-placeholder"></div>
         
         <!--Nav bar-->
+        <div id="nav-placeholder"></div>
+        <div class="wait-nav"></div>
+        <script src="../js/load-nav.js"></script>
+        <!--Nav bar-->
 
-        <!--Nav-projet bar-->
-        <div id="nav-projet-placeholder"></div>
-        <!--Nav-projet bar-->
-
-        <script src="../js/nav.js"></script>
-        <script src="../js/nav-projet.js"></script>
+        
         
 		<div class="postbody">
             <h1 class="titre">Freebox Delta - Utiliser plus de coeur sur une VM</h1>
@@ -55,10 +52,10 @@
             
             <h1><u>Avant :</u></h1>
             <p>
-            Au départ, lorsque la Freebox delta a été lancée, il était possible d'allouer à une VM 3 cœurs du processeur 
-            ARM de la Delta qui en possède 4. Cependant, après des problèmes de stabilité, l'option a été supprimé. 
-            Mais d'après ce qu'on peut lire sur internet, il s'agirait d'un problème causé par un manque de RAM, 
-            il est donc nécessaire d'upgrade la RAM de votre Freebox avant de faire la manipulation qui va suivre pour des soucis de stabilité !
+                Au départ, lorsque la Freebox delta a été lancée, il était possible d'allouer à une VM 3 cœurs du processeur 
+                ARM de la Delta qui en possède 4. Cependant, après des problèmes de stabilité, l'option a été supprimée. 
+                Mais d'après ce qu'on peut lire sur internet, il s'agirait d'un problème causé par un manque de RAM, 
+                il est donc nécessaire d'upgrade la RAM de votre Freebox avant de faire la manipulation qui va suivre pour des soucis de stabilité !
             </p>
             <p>
                 Je tiens a préciser que je ne suis en aucun cas responsable de tout problème qui pourrait survenir lors de la manipulation qui va suivre.
@@ -105,8 +102,8 @@
             </p>
 
             <p>
-                A noté qu'il n'est pas possible de lancer deux VM à la fois, une avec 2 cœurs et l'autre avec 1 la Freebox ne le supporte normalement pas. <br>
-                Les deux seul possibilités sont : 1VM 3 cœurs ou 2VM 1 cœur chacune.
+                A noter qu'il n'est pas possible de lancer deux VM à la fois, une avec 2 cœurs et l'autre avec 1 la Freebox ne le supporte normalement pas. <br>
+                Les deux seules possibilités sont : 1VM 3 cœurs ou 2VM 1 cœur chacune.
             </p>
             
             <p>
@@ -121,7 +118,7 @@
             </p>
             
             <p>     
-                Et bien sûre cela ne limite pas les capacités de la box :
+                Et bien sûre cela ne limité pas les capacités de la box :
             </p>
             
             
@@ -130,7 +127,7 @@
             
 
             <p>
-                Le débit n'est absolument pas limité par les modification apportée à la Freebox. <br>
+                Le débit n'est absolument pas limité par les modifications apportées à la Freebox. <br>
                 Si vous avez besoin d'aide, je suis sur discord ORIGIN#8208. Une autre astuce, retourner la Freebox en ouvrant le capot gris réduit la chauffe (sans relever les disques dure).
             </p>
 
@@ -140,7 +137,6 @@
         <div id="footer-placeholder"></div>
         <script src="../js/footer.js"></script>
         <!--footer bar-->
-
     </body>
 
 </html>

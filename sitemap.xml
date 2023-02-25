@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://enzo-frnt.fr/</loc>
+	<lastmod>2023-01-09T23:24:00+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/moi.html</loc>
+	<lastmod>2023-01-09T23:24:00+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/projet.html</loc>
+	<lastmod>2023-01-09T23:24:00+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://enzo-frnt.fr/Image/IMG_0984%20conv.jpeg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://enzo-frnt.fr/Image/IMG_0963.PNG</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://enzo-frnt.fr/Image/IMG_0965%20conv.jpeg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/cv.html</loc>
+	<lastmod>2023-01-09T23:24:00+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/Projet/freebox.html</loc>
+	<lastmod>2023-01-09T23:24:02+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/Projet/Alarme.html</loc>
+	<lastmod>2023-01-09T23:24:02+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/Projet/10giga.html</loc>
+	<lastmod>2023-01-09T23:24:02+01:00</lastmod>
+	<priority>0.8</priority>
+	<image:image>
+			<image:loc>https://enzo-frnt.fr/Image/IMG_0966%20conv.jpeg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://enzo-frnt.fr/file/CV-EnzoFournet-2023.pdf</loc>
+	<lastmod>2023-01-09T23:24:03+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>

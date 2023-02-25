@@ -1,3 +1,9 @@
+.wait-nav{
+    height: 70px ;
+    width: 100% ;
+    position: relative;
+}
+
 body {
     background-color: #6e6e6e;
     color: #2e2e2e;
@@ -17,9 +23,11 @@ h1 {
     text-align: center;
 }
 
-img {
-    width: 200px;
-    height: 200px;
+.zoom-in {
+    transition: transform 0.5s;
+}
+.zoom-in:hover {
+    transform: scale(0.98);
 }
 
 .liste-projet {
@@ -30,7 +38,25 @@ img {
     margin: 0% 30%;
     list-style-type: none;
     padding: 0px;
-}.liste-projet a {
+}
+.liste-projet hr {
+    background-color: #2e2e2e;
+    border: none;
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;  
+
+    align-items: center;
+}.liste-projet img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.liste-projet a {
     width: 300px;
     height: 300px;
 
@@ -47,24 +73,10 @@ img {
     background: linear-gradient(145deg, #636363, #767676);
     box-shadow:  20px 20px 60px #5e5e5e,
                  -20px -20px 60px #7f7f7f;
-}.liste-projet hr {
-    background-color: #2e2e2e;
-    border: none;
-    width: 80%;
-    height: 100%;
-    padding: 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 50px;  
-
-    align-items: center;
-}.liste-projet a:hover {
+}
+.liste-projet a:hover {
     border-radius: 50px;    
     background: var(--main-color);
     box-shadow: inset 5px 5px 30px #5e5e5e,
                 inset -5px -5px 30px #7f7f7f;
-}.liste-projet img {
-    width: 200px;
-    height: 200px;
 }
-

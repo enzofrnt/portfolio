@@ -1,38 +1,21 @@
-/*  nav */
+/* faire disparaitre ce qui permetde ne pas faire trop bouger la page*/
+.wait-nav{
+    display: none;
+}
 
-
+/* NAV */
 nav {
     top: 0%;
-    margin: 0.4%;
+    margin: 0%;
     padding: 0px;
     background-color: #2e2e2e; 
-    display: flex; 
-    width: 99.2%;
+    display: flex !important; 
+    justify-content: space-between;
     border-radius: 20px;
-}
-
-.navbar-lu {
-    display: flex;
-    color: #ffffff;
-}
-.navbar-lu li {
-    padding: 0 10px;
-    display: inline-block;
-    text-align: left;
-}
-.navbar-lu a {
-    color: #a8a8a8;
-    text-decoration: none;
-}
-.navbar-lu a:hover {
-    color: #ffffff;
-    
-}
-
-.main-nav{
-    display: flex;
+    position: relative;
     flex: 1;    
     padding: 10px 20px;
+    margin: 0.3%;
 }
 
 .nav-left {
@@ -41,7 +24,6 @@ nav {
     text-align: left;
     color: #a8a8a8;
 }
-
 .nav-center {
     flex: 1;
     color: #a8a8a8;
@@ -52,30 +34,97 @@ nav {
     font-weight: bold;
 }
 
+
 .nav-right {
     flex: 1;
     color: #a8a8a8;
     display: flex;
     justify-content: flex-end;
 }
+.navbar-lu {
+    display: flex;
+    color: #ffffff;
+    
+}.navbar-lu li {
+    padding: 0 10px;
+    display: inline-block;
+    text-align: left;
+}.navbar-lu a {
+    color: #a8a8a8;
+    text-decoration: none;
+}.navbar-lu a:hover {
+    color: #ffffff;
+    
+}
 
+
+/* Hide the input */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.check-trail {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+
+    background: #2e2e2e;
+    box-shadow:  7px 7px 14px #272727,
+                 -7px -7px 14px #353535;
+
+    border-radius: 2.5em;
+    transition: all 1s ease;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 20px   ;
+}
+.check-handler {
+    display: flex;
+    margin-left: 0.5em;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: rgb(24, 24, 24);
+    border-radius: 50%;
+    transition: all 1s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.check-handler:before {
+    content: "🌙";
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input[type="checkbox"]:checked + .check-trail {
+    background: #fff;
+}
+input[type="checkbox"]:checked + .check-trail .check-handler {
+    margin-left: 50%;
+    background: #fff;
+}
+input[type="checkbox"]:checked + .check-trail .check-handler::before {
+    color: yellow;
+    content: "☀";
+}
+
+
+
+
+/* Nom blanc du nav*/
 .name-nav{
     text-decoration: none;
     color : white;
 }
 
-.nav-right-mobile {
-    display: none;
-}
 
 #menu {
     display: none;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s ease;
 }
 
-@media (max-width: 985px) {
+@media (max-width: 1600px) {
     .main-nav{
         padding: 20px 30px !important;
     }
@@ -84,7 +133,7 @@ nav {
     }
     .nav-right-mobile {
         flex: 1;
-        display: flex;
+        display: flex !important;
         justify-content: flex-end;
     }
     .nav-right-mobile button{
@@ -148,10 +197,47 @@ nav {
         color: #ffffff;
     }
         
+    .check-trail{
+        margin-right: 30px;
+    }
 }
 
 @media (max-width: 730px) {
     #menu.open {
         margin-left: 75%;
     }
+}
+
+
+
+.nav-projet {
+    display: flex ;
+    margin: 0%;
+    margin-top: 80px;
+    top: 0%;
+    padding: 0%;
+    background-color: transparent;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+}
+.nav-projet-right{
+    padding: 0%;
+    margin: 0%;
+    margin-right: 175px !important;
+    background-color: #454545;
+    border-radius: 15px;
+    width: 286px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.nav-projet-right a {
+    padding: 0px 10px;
+    color: #bbbbbb;
+    text-decoration: none;
+}.nav-projet-right a:hover {
+    color: #ffffff;
+}.nav-projet-right li {
+    list-style: none;
 }

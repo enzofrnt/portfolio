@@ -34,6 +34,16 @@
 
         <link rel="shortcut icon" href="Image/PP-petite-modified.webp" >
         <link rel="stylesheet" href="index.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G802TCQLSK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-G802TCQLSK');
+        </script>
     </head>
 
     <body>
@@ -42,8 +52,8 @@
 
         <!--Nav bar-->
         <div id="nav-placeholder"></div>
-        <script src="./js/nav.js"></script>
-        
+        <script src="./js/load-nav.js"></script>
+        <div class="wait-nav"></div>
         <!--Nav bar-->
 
         <div class="posTotal">
@@ -77,12 +87,13 @@
                 <h1>A propos de moi</h1>
                  <h2>Qui suis-je :</h2>
                 <p>
-                    Je m'appelle Enzo Fournet et j'ai 18 ans. Je suis né le 13 septembre 2004. 
+                    Je m'appelle Enzo Fournet et j'ai <span id="age"></span> ans. Je suis né le 13 septembre 2004. 
                     Ma passion pour l'informatique remonte à 8 ans et j'ai une grande curiosité pour tous les aspects de cette discipline, que ce soit le hardware ou le software. 
                     Je suis quelqu'un de très motivé et j'aime mener à bien les projets sur lesquels je travaille. 
                     Je suis également très actif et souriant, et j'aime mettre mon énergie au service de mes passions. 
                     J'ai déjà réalisé de nombreux projets en solo et pendant mes études, et j'aime beaucoup apprendre par moi-même en faisant des recherches en dehors de mes études.
                 </p>
+                <script>var birthdate = new Date("2004-09-13");var ageDifMs = Date.now() - birthdate.getTime();var ageDate = new Date(ageDifMs);var age =  Math.abs(ageDate.getUTCFullYear() - 1970);document.getElementById("age").innerHTML = age;</script>
                 <h2>Mes passion :</h2>
                 <p>
                     Je suis passionné par l'informatique et le VTT depuis plus de 8 ans. <br>

@@ -1,11 +1,7 @@
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../nav/nav.css">
-    <script src="../js/nav-responsive.js" async></script>
-</head>
 
-<nav>
-    <div class="main-nav">
+<link rel="stylesheet" href="../nav/nav.css">
+
+<nav style="display: none;">
         <div class="nav-left">
             <a class="name-nav" href="../index.html"> ENZO FOURNET </a>
         </div>
@@ -13,27 +9,57 @@
             <a class="name-nav" href="../index.html">Portfolio</a>
         </div>
 
-        
-
-
         <div class="nav-right">
-            <ul class="navbar-lu">
-                <li><a class="hilight1" href="../moi.html">Mes ambitions</a></li>
-                <li><a class="hilight2" id="project" href="../projet.html">Mes projet</a></l>
+            
+            
+            <ul class="navbar-lu" >
+                <li><a class="hilight1" href="../moi.html">Mes Ambitions</a></li>
+                <li><a class="hilight2" id="projet" href="../projet.html">Mes Projets</a></l>
                 <li><a class="hilight3" href="../cv.html">Mon CV</a></l>
+                <li><a class="hilight4" href="../services.html">Mes Services</a></li>
             </ul>
+
+            <div>
+                <input id="chck" type="checkbox">
+                <label for="chck" class="check-trail">
+                  <span class="check-handler"></span>
+                </label>
+            </div>
         </div>
 
-        <div id="menu-button" class="nav-right-mobile">
+
+        <div id="menu-button" class="nav-right-mobile" style="display: none;">
+            <div>
+                    <input id="chck" type="checkbox">
+                    <label for="chck" class="check-trail">
+                    <span class="check-handler"></span>
+                    </label>
+            </div>
             <button id="nav-button">☰</button>
         </div>
-
-    </div>
 </nav>
 
-<ul id="menu">
-    <li><a class="hilight1" href="../moi.html">Mes ambitions</a></li>
-    <li><a class="hilight2" id="project" href="../projet.html">Mes projet</a></l>
-    <li><a class="hilight3" href="../cv.html">Mon CV</a></l>
-</ul>
+<div class="nav-projet" id="nav-projet" style="display: none;">
+    <ul class="nav-projet-right" id="nav-projet-right">
+        <li><a class="projet-hilight1" href="../../Projet/freebox.html">Freebox</a></li>
+        <li><a class="projet-hilight2" href="../../Projet/Alarme.html">Alarme</a></l>
+        <li><a class="projet-hilight3" href="../../Projet/10giga.html">Réseau 10 Gb/s</a></l>
+    </ul>
+</div>
 
+
+<div >
+    <ul id="menu">
+        <li><a class="hilight1" href="../moi.html">Mes Ambitions</a></li>
+        <li><a class="hilight2" id="projectresp" href="../projet.html">Mes Projets</a></l>
+        <li><a class="hilight3" href="../cv.html">Mon CV</a></l>
+        <li><a class="hilight4" href="../services.html">Mes Services</a></li>
+    </ul>
+    <div style="display: none";>
+        hehre nav projet - mobile
+    </div>
+</div>
+
+
+<script src="../js/old nav/nav-projet-display.js" async></script>
+<script src="../js/nav-responsive.js"></script>
